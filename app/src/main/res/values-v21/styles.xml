@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Light" parent="android:Theme.Material.Light">
+        <item name="icActionEdit">@drawable/ic_action_edit_light</item>
+        <item name="floatingActionButtonStyle">@style/AppTheme.Fab.Light</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Light">
+    </style>
+
+    <style name="AppTheme.Fab.Light" parent="FloatingActionButton">
+        <item name="floatingActionButtonColor">@color/fab_light</item>
+    </style>
+
+
+</resources>

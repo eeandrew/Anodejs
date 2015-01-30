@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/header">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/post_title_background"
+        android:id="@+id/post_title">
+        <!--title-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:layout_marginLeft="45dp"
+            android:id="@+id/detail_title" />
+        <!--author-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:layout_marginLeft="45dp"
+            android:layout_below="@id/detail_title"
+            android:id="@+id/detail_author" />
+    </LinearLayout>
+
+    <include layout="@layout/include_add_schedule_fab" />
+
+    <!--content-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:layout_below="@id/post_title"
+        android:id="@+id/detail_content" />
+    <!--horizontal seperator-->
+    <View
+        android:layout_marginLeft="45dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/ho_seperator"
+        android:layout_below="@id/detail_content"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>

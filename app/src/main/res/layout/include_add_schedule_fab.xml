@@ -1,0 +1,24 @@
+<com.wap.zhoulin.anodejs.ui.widget.AddToScheduleFABFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_schedule_button"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="8dp"
+    android:layout_alignBottom="@id/post_title"
+    android:layout_marginBottom="-20dp"
+    android:background="@drawable/add_schedule_fab_ripple_background_off"
+    android:stateListAnimator="@anim/add_schedule_fab_state_list_anim"
+    android:contentDescription="Add to Collection"
+    >
+    <ImageView android:id="@+id/add_schedule_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/add_schedule_button_icon_unchecked"
+        android:contentDescription="@null"
+        android:layout_gravity="center" />
+
+</com.wap.zhoulin.anodejs.ui.widget.AddToScheduleFABFrameLayout>
